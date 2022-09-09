@@ -16,6 +16,8 @@
 
 package com.google.schemaorg.core;
 
+import com.google.schemaorg.core.impl.*;
+
 /** Factory to create builder object in the namespace http://schema.org/. */
 public final class CoreFactory {
 

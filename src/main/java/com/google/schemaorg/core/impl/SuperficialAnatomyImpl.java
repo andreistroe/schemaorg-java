@@ -14,14 +14,29 @@
  * limitations under the License.
  */
 
-package com.google.schemaorg.core;
-
-import com.google.common.collect.ImmutableList;
+package com.google.schemaorg.core.impl;import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Multimap;
 import com.google.schemaorg.SchemaOrgType;
 import com.google.schemaorg.SchemaOrgTypeImpl;
 import com.google.schemaorg.ValueType;
+import com.google.schemaorg.core.Action;
+import com.google.schemaorg.core.AnatomicalStructure;
+import com.google.schemaorg.core.AnatomicalSystem;
+import com.google.schemaorg.core.Article;
+import com.google.schemaorg.core.CoreConstants;
+import com.google.schemaorg.core.CreativeWork;
+import com.google.schemaorg.core.ImageObject;
+import com.google.schemaorg.core.MedicalCode;
+import com.google.schemaorg.core.MedicalCondition;
+import com.google.schemaorg.core.MedicalGuideline;
+import com.google.schemaorg.core.MedicalSpecialty;
+import com.google.schemaorg.core.MedicalStudy;
+import com.google.schemaorg.core.MedicalTherapy;
+import com.google.schemaorg.core.MedicineSystem;
+import com.google.schemaorg.core.Organization;
+import com.google.schemaorg.core.SuperficialAnatomy;
+import com.google.schemaorg.core.Thing;
 import com.google.schemaorg.core.datatype.Text;
 import com.google.schemaorg.core.datatype.URL;
 import com.google.schemaorg.goog.GoogConstants;
@@ -81,7 +96,7 @@ public class SuperficialAnatomyImpl extends MedicalEntityImpl implements Superfi
     return builder.build();
   }
 
-  static final class BuilderImpl extends SchemaOrgTypeImpl.BuilderImpl<SuperficialAnatomy.Builder>
+  public static final class BuilderImpl extends SchemaOrgTypeImpl.BuilderImpl<SuperficialAnatomy.Builder>
       implements SuperficialAnatomy.Builder {
 
     @Override

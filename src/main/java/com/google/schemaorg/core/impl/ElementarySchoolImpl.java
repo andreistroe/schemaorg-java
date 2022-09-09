@@ -14,12 +14,35 @@
  * limitations under the License.
  */
 
-package com.google.schemaorg.core;
-
-import com.google.common.collect.ImmutableSet;
+package com.google.schemaorg.core.impl;import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Multimap;
 import com.google.schemaorg.SchemaOrgTypeImpl;
 import com.google.schemaorg.ValueType;
+import com.google.schemaorg.core.Action;
+import com.google.schemaorg.core.AdministrativeArea;
+import com.google.schemaorg.core.AggregateRating;
+import com.google.schemaorg.core.Article;
+import com.google.schemaorg.core.Brand;
+import com.google.schemaorg.core.ContactPoint;
+import com.google.schemaorg.core.CoreConstants;
+import com.google.schemaorg.core.CreativeWork;
+import com.google.schemaorg.core.Demand;
+import com.google.schemaorg.core.ElementarySchool;
+import com.google.schemaorg.core.Event;
+import com.google.schemaorg.core.GeoShape;
+import com.google.schemaorg.core.ImageObject;
+import com.google.schemaorg.core.Offer;
+import com.google.schemaorg.core.OfferCatalog;
+import com.google.schemaorg.core.Organization;
+import com.google.schemaorg.core.OwnershipInfo;
+import com.google.schemaorg.core.Person;
+import com.google.schemaorg.core.Place;
+import com.google.schemaorg.core.PostalAddress;
+import com.google.schemaorg.core.Product;
+import com.google.schemaorg.core.ProgramMembership;
+import com.google.schemaorg.core.QuantitativeValue;
+import com.google.schemaorg.core.Review;
+import com.google.schemaorg.core.Thing;
 import com.google.schemaorg.core.datatype.Date;
 import com.google.schemaorg.core.datatype.Text;
 import com.google.schemaorg.core.datatype.URL;
@@ -148,7 +171,7 @@ public class ElementarySchoolImpl extends EducationalOrganizationImpl implements
     return builder.build();
   }
 
-  static final class BuilderImpl extends SchemaOrgTypeImpl.BuilderImpl<ElementarySchool.Builder>
+  public static final class BuilderImpl extends SchemaOrgTypeImpl.BuilderImpl<ElementarySchool.Builder>
       implements ElementarySchool.Builder {
 
     @Override

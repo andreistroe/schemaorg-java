@@ -14,8 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.schemaorg.goog;
-
+package com.google.schemaorg.goog.impl;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Multimap;
@@ -29,13 +28,15 @@ import com.google.schemaorg.core.CoreConstants;
 import com.google.schemaorg.core.CreativeWork;
 import com.google.schemaorg.core.GeoShape;
 import com.google.schemaorg.core.ImageObject;
-import com.google.schemaorg.core.IntangibleImpl;
 import com.google.schemaorg.core.Place;
 import com.google.schemaorg.core.StructuredValue;
 import com.google.schemaorg.core.Thing;
 import com.google.schemaorg.core.datatype.Number;
 import com.google.schemaorg.core.datatype.Text;
 import com.google.schemaorg.core.datatype.URL;
+import com.google.schemaorg.core.impl.IntangibleImpl;
+import com.google.schemaorg.goog.GoogConstants;
+import com.google.schemaorg.goog.PopularityScoreSpecification;
 
 /** Implementation of {@link PopularityScoreSpecification}. */
 public class PopularityScoreSpecificationImpl extends IntangibleImpl
@@ -76,7 +77,7 @@ public class PopularityScoreSpecificationImpl extends IntangibleImpl
     return builder.build();
   }
 
-  static final class BuilderImpl
+  public static final class BuilderImpl
       extends SchemaOrgTypeImpl.BuilderImpl<PopularityScoreSpecification.Builder>
       implements PopularityScoreSpecification.Builder {
 

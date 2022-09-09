@@ -16,6 +16,8 @@
 
 package com.google.schemaorg.goog;
 
+import javax.annotation.Nullable;
+
 import com.google.common.collect.ImmutableList;
 import com.google.schemaorg.JsonLdContext;
 import com.google.schemaorg.SchemaOrgType;
@@ -28,7 +30,6 @@ import com.google.schemaorg.core.Thing;
 import com.google.schemaorg.core.datatype.Number;
 import com.google.schemaorg.core.datatype.Text;
 import com.google.schemaorg.core.datatype.URL;
-import javax.annotation.Nullable;
 
 /**
  * Interface of <a

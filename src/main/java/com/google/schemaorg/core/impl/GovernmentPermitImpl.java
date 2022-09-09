@@ -14,12 +14,22 @@
  * limitations under the License.
  */
 
-package com.google.schemaorg.core;
-
-import com.google.common.collect.ImmutableSet;
+package com.google.schemaorg.core.impl;import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Multimap;
 import com.google.schemaorg.SchemaOrgTypeImpl;
 import com.google.schemaorg.ValueType;
+import com.google.schemaorg.core.Action;
+import com.google.schemaorg.core.AdministrativeArea;
+import com.google.schemaorg.core.Article;
+import com.google.schemaorg.core.Audience;
+import com.google.schemaorg.core.CoreConstants;
+import com.google.schemaorg.core.CreativeWork;
+import com.google.schemaorg.core.Duration;
+import com.google.schemaorg.core.GovernmentPermit;
+import com.google.schemaorg.core.ImageObject;
+import com.google.schemaorg.core.Organization;
+import com.google.schemaorg.core.Service;
+import com.google.schemaorg.core.Thing;
 import com.google.schemaorg.core.datatype.Date;
 import com.google.schemaorg.core.datatype.DateTime;
 import com.google.schemaorg.core.datatype.Text;
@@ -73,7 +83,7 @@ public class GovernmentPermitImpl extends PermitImpl implements GovernmentPermit
     return builder.build();
   }
 
-  static final class BuilderImpl extends SchemaOrgTypeImpl.BuilderImpl<GovernmentPermit.Builder>
+  public static final class BuilderImpl extends SchemaOrgTypeImpl.BuilderImpl<GovernmentPermit.Builder>
       implements GovernmentPermit.Builder {
 
     @Override

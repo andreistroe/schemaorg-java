@@ -14,14 +14,40 @@
  * limitations under the License.
  */
 
-package com.google.schemaorg.core;
-
-import com.google.common.collect.ImmutableList;
+package com.google.schemaorg.core.impl;import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Multimap;
 import com.google.schemaorg.SchemaOrgType;
 import com.google.schemaorg.SchemaOrgTypeImpl;
 import com.google.schemaorg.ValueType;
+import com.google.schemaorg.core.Action;
+import com.google.schemaorg.core.AdministrativeArea;
+import com.google.schemaorg.core.AggregateOffer;
+import com.google.schemaorg.core.AggregateRating;
+import com.google.schemaorg.core.Article;
+import com.google.schemaorg.core.BusinessEntityType;
+import com.google.schemaorg.core.BusinessFunction;
+import com.google.schemaorg.core.CoreConstants;
+import com.google.schemaorg.core.CreativeWork;
+import com.google.schemaorg.core.DeliveryMethod;
+import com.google.schemaorg.core.GeoShape;
+import com.google.schemaorg.core.ImageObject;
+import com.google.schemaorg.core.ItemAvailability;
+import com.google.schemaorg.core.Offer;
+import com.google.schemaorg.core.OfferItemCondition;
+import com.google.schemaorg.core.Organization;
+import com.google.schemaorg.core.PaymentMethod;
+import com.google.schemaorg.core.Person;
+import com.google.schemaorg.core.PhysicalActivityCategory;
+import com.google.schemaorg.core.Place;
+import com.google.schemaorg.core.PriceSpecification;
+import com.google.schemaorg.core.Product;
+import com.google.schemaorg.core.QuantitativeValue;
+import com.google.schemaorg.core.Review;
+import com.google.schemaorg.core.Service;
+import com.google.schemaorg.core.Thing;
+import com.google.schemaorg.core.TypeAndQuantityNode;
+import com.google.schemaorg.core.WarrantyPromise;
 import com.google.schemaorg.core.datatype.Date;
 import com.google.schemaorg.core.datatype.DateTime;
 import com.google.schemaorg.core.datatype.Integer;
@@ -153,7 +179,7 @@ public class AggregateOfferImpl extends OfferImpl implements AggregateOffer {
     return builder.build();
   }
 
-  static final class BuilderImpl extends SchemaOrgTypeImpl.BuilderImpl<AggregateOffer.Builder>
+  public static final class BuilderImpl extends SchemaOrgTypeImpl.BuilderImpl<AggregateOffer.Builder>
       implements AggregateOffer.Builder {
 
     @Override

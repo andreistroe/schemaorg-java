@@ -14,12 +14,19 @@
  * limitations under the License.
  */
 
-package com.google.schemaorg.core;
-
-import com.google.common.collect.ImmutableSet;
+package com.google.schemaorg.core.impl;import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Multimap;
 import com.google.schemaorg.SchemaOrgTypeImpl;
 import com.google.schemaorg.ValueType;
+import com.google.schemaorg.core.Action;
+import com.google.schemaorg.core.Article;
+import com.google.schemaorg.core.BreadcrumbList;
+import com.google.schemaorg.core.CoreConstants;
+import com.google.schemaorg.core.CreativeWork;
+import com.google.schemaorg.core.ImageObject;
+import com.google.schemaorg.core.ItemListOrderType;
+import com.google.schemaorg.core.ListItem;
+import com.google.schemaorg.core.Thing;
 import com.google.schemaorg.core.datatype.Integer;
 import com.google.schemaorg.core.datatype.Text;
 import com.google.schemaorg.core.datatype.URL;
@@ -64,7 +71,7 @@ public class BreadcrumbListImpl extends ItemListImpl implements BreadcrumbList {
     return builder.build();
   }
 
-  static final class BuilderImpl extends SchemaOrgTypeImpl.BuilderImpl<BreadcrumbList.Builder>
+  public static final class BuilderImpl extends SchemaOrgTypeImpl.BuilderImpl<BreadcrumbList.Builder>
       implements BreadcrumbList.Builder {
 
     @Override

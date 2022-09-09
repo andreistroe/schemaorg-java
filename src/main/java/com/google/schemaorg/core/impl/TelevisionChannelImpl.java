@@ -14,12 +14,19 @@
  * limitations under the License.
  */
 
-package com.google.schemaorg.core;
-
-import com.google.common.collect.ImmutableSet;
+package com.google.schemaorg.core.impl;import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Multimap;
 import com.google.schemaorg.SchemaOrgTypeImpl;
 import com.google.schemaorg.ValueType;
+import com.google.schemaorg.core.Action;
+import com.google.schemaorg.core.Article;
+import com.google.schemaorg.core.BroadcastService;
+import com.google.schemaorg.core.CableOrSatelliteService;
+import com.google.schemaorg.core.CoreConstants;
+import com.google.schemaorg.core.CreativeWork;
+import com.google.schemaorg.core.ImageObject;
+import com.google.schemaorg.core.TelevisionChannel;
+import com.google.schemaorg.core.Thing;
 import com.google.schemaorg.core.datatype.Text;
 import com.google.schemaorg.core.datatype.URL;
 import com.google.schemaorg.goog.GoogConstants;
@@ -65,7 +72,7 @@ public class TelevisionChannelImpl extends BroadcastChannelImpl implements Telev
     return builder.build();
   }
 
-  static final class BuilderImpl extends SchemaOrgTypeImpl.BuilderImpl<TelevisionChannel.Builder>
+  public static final class BuilderImpl extends SchemaOrgTypeImpl.BuilderImpl<TelevisionChannel.Builder>
       implements TelevisionChannel.Builder {
 
     @Override

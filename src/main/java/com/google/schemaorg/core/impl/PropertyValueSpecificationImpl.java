@@ -14,14 +14,20 @@
  * limitations under the License.
  */
 
-package com.google.schemaorg.core;
-
-import com.google.common.collect.ImmutableList;
+package com.google.schemaorg.core.impl;import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Multimap;
 import com.google.schemaorg.SchemaOrgType;
 import com.google.schemaorg.SchemaOrgTypeImpl;
 import com.google.schemaorg.ValueType;
+import com.google.schemaorg.core.Action;
+import com.google.schemaorg.core.Article;
+import com.google.schemaorg.core.Boolean;
+import com.google.schemaorg.core.CoreConstants;
+import com.google.schemaorg.core.CreativeWork;
+import com.google.schemaorg.core.ImageObject;
+import com.google.schemaorg.core.PropertyValueSpecification;
+import com.google.schemaorg.core.Thing;
 import com.google.schemaorg.core.datatype.Number;
 import com.google.schemaorg.core.datatype.Text;
 import com.google.schemaorg.core.datatype.URL;
@@ -83,7 +89,7 @@ public class PropertyValueSpecificationImpl extends IntangibleImpl
     return builder.build();
   }
 
-  static final class BuilderImpl
+  public static final class BuilderImpl
       extends SchemaOrgTypeImpl.BuilderImpl<PropertyValueSpecification.Builder>
       implements PropertyValueSpecification.Builder {
 

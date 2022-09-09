@@ -16,6 +16,9 @@
 
 package com.google.schemaorg.goog;
 
+import com.google.schemaorg.goog.impl.EntitySearchResultImpl;
+import com.google.schemaorg.goog.impl.PopularityScoreSpecificationImpl;
+
 /** Factory to create builder object in the namespace http://schema.googleapis.com/. */
 public final class GoogFactory {
 

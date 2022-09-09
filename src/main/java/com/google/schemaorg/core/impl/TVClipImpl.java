@@ -14,14 +14,42 @@
  * limitations under the License.
  */
 
-package com.google.schemaorg.core;
-
-import com.google.common.collect.ImmutableList;
+package com.google.schemaorg.core.impl;import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Multimap;
 import com.google.schemaorg.SchemaOrgType;
 import com.google.schemaorg.SchemaOrgTypeImpl;
 import com.google.schemaorg.ValueType;
+import com.google.schemaorg.core.Action;
+import com.google.schemaorg.core.AggregateRating;
+import com.google.schemaorg.core.AlignmentObject;
+import com.google.schemaorg.core.Article;
+import com.google.schemaorg.core.Audience;
+import com.google.schemaorg.core.AudioObject;
+import com.google.schemaorg.core.Boolean;
+import com.google.schemaorg.core.Comment;
+import com.google.schemaorg.core.CoreConstants;
+import com.google.schemaorg.core.CreativeWork;
+import com.google.schemaorg.core.CreativeWorkSeason;
+import com.google.schemaorg.core.CreativeWorkSeries;
+import com.google.schemaorg.core.Duration;
+import com.google.schemaorg.core.Episode;
+import com.google.schemaorg.core.Event;
+import com.google.schemaorg.core.ImageObject;
+import com.google.schemaorg.core.InteractionCounter;
+import com.google.schemaorg.core.Language;
+import com.google.schemaorg.core.MediaObject;
+import com.google.schemaorg.core.MusicGroup;
+import com.google.schemaorg.core.Offer;
+import com.google.schemaorg.core.Organization;
+import com.google.schemaorg.core.Person;
+import com.google.schemaorg.core.Place;
+import com.google.schemaorg.core.PublicationEvent;
+import com.google.schemaorg.core.Review;
+import com.google.schemaorg.core.TVClip;
+import com.google.schemaorg.core.TVSeries;
+import com.google.schemaorg.core.Thing;
+import com.google.schemaorg.core.VideoObject;
 import com.google.schemaorg.core.datatype.Date;
 import com.google.schemaorg.core.datatype.DateTime;
 import com.google.schemaorg.core.datatype.Integer;
@@ -225,7 +253,7 @@ public class TVClipImpl extends ClipImpl implements TVClip {
     return builder.build();
   }
 
-  static final class BuilderImpl extends SchemaOrgTypeImpl.BuilderImpl<TVClip.Builder>
+  public static final class BuilderImpl extends SchemaOrgTypeImpl.BuilderImpl<TVClip.Builder>
       implements TVClip.Builder {
 
     @Override

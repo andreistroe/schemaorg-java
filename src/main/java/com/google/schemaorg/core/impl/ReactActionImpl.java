@@ -14,12 +14,23 @@
  * limitations under the License.
  */
 
-package com.google.schemaorg.core;
-
-import com.google.common.collect.ImmutableSet;
+package com.google.schemaorg.core.impl;import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Multimap;
 import com.google.schemaorg.SchemaOrgTypeImpl;
 import com.google.schemaorg.ValueType;
+import com.google.schemaorg.core.Action;
+import com.google.schemaorg.core.ActionStatusType;
+import com.google.schemaorg.core.Article;
+import com.google.schemaorg.core.CoreConstants;
+import com.google.schemaorg.core.CreativeWork;
+import com.google.schemaorg.core.EntryPoint;
+import com.google.schemaorg.core.ImageObject;
+import com.google.schemaorg.core.Organization;
+import com.google.schemaorg.core.Person;
+import com.google.schemaorg.core.Place;
+import com.google.schemaorg.core.PostalAddress;
+import com.google.schemaorg.core.ReactAction;
+import com.google.schemaorg.core.Thing;
 import com.google.schemaorg.core.datatype.DateTime;
 import com.google.schemaorg.core.datatype.Text;
 import com.google.schemaorg.core.datatype.URL;
@@ -80,7 +91,7 @@ public class ReactActionImpl extends AssessActionImpl implements ReactAction {
     return builder.build();
   }
 
-  static final class BuilderImpl extends SchemaOrgTypeImpl.BuilderImpl<ReactAction.Builder>
+  public static final class BuilderImpl extends SchemaOrgTypeImpl.BuilderImpl<ReactAction.Builder>
       implements ReactAction.Builder {
 
     @Override

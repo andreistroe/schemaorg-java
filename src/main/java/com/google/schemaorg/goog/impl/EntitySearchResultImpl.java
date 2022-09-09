@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.schemaorg.goog;
+package com.google.schemaorg.goog.impl;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
@@ -27,11 +27,14 @@ import com.google.schemaorg.core.Article;
 import com.google.schemaorg.core.CoreConstants;
 import com.google.schemaorg.core.CreativeWork;
 import com.google.schemaorg.core.ImageObject;
-import com.google.schemaorg.core.IntangibleImpl;
 import com.google.schemaorg.core.Thing;
 import com.google.schemaorg.core.datatype.Number;
 import com.google.schemaorg.core.datatype.Text;
 import com.google.schemaorg.core.datatype.URL;
+import com.google.schemaorg.core.impl.IntangibleImpl;
+import com.google.schemaorg.goog.EntitySearchResult;
+import com.google.schemaorg.goog.GoogConstants;
+import com.google.schemaorg.goog.PopularityScoreSpecification;
 
 /** Implementation of {@link EntitySearchResult}. */
 public class EntitySearchResultImpl extends IntangibleImpl implements EntitySearchResult {
@@ -67,7 +70,7 @@ public class EntitySearchResultImpl extends IntangibleImpl implements EntitySear
     return builder.build();
   }
 
-  static final class BuilderImpl extends SchemaOrgTypeImpl.BuilderImpl<EntitySearchResult.Builder>
+  public static final class BuilderImpl extends SchemaOrgTypeImpl.BuilderImpl<EntitySearchResult.Builder>
       implements EntitySearchResult.Builder {
 
     @Override
