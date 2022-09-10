@@ -862,6 +862,9 @@ public interface MediaObject extends CreativeWork {
     /** Add a value to property width. */
     Builder addWidth(String value);
 
+    /** Add a value to property width. */
+    Builder addWidth(Integer value);
+    
     /** Add a value to property workExample. */
     Builder addWorkExample(CreativeWork value);
 

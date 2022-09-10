@@ -173,6 +173,9 @@ public interface WebPage extends CreativeWork {
     Builder addAwards(String value);
 
     /** Add a value to property breadcrumb. */
+    Builder addBreadcrumb(Thing value);
+
+    /** Add a value to property breadcrumb. */
     Builder addBreadcrumb(BreadcrumbList value);
 
     /** Add a value to property breadcrumb. */
@@ -463,6 +466,9 @@ public interface WebPage extends CreativeWork {
     /** Add a value to property isPartOf. */
     Builder addIsPartOf(String value);
 
+    /** Add a value to property isPartOf. */
+    Builder addIsPartOf(Thing value);
+
     /** Add a value to property keywords. */
     Builder addKeywords(Text value);
 
@@ -574,6 +580,9 @@ public interface WebPage extends CreativeWork {
     /** Add a value to property potentialAction. */
     Builder addPotentialAction(String value);
 
+    /** Add a value to property primaryImageOfPage. */
+    Builder addPrimaryImageOfPage(Thing value);
+    
     /** Add a value to property primaryImageOfPage. */
     Builder addPrimaryImageOfPage(ImageObject value);
 

@@ -413,6 +413,9 @@ public interface NewsArticle extends Article {
     Builder addHeadline(String value);
 
     /** Add a value to property image. */
+    Builder addImage(Thing value);
+
+    /** Add a value to property image. */
     Builder addImage(ImageObject value);
 
     /** Add a value to property image. */
@@ -464,6 +467,9 @@ public interface NewsArticle extends Article {
     Builder addIsFamilyFriendly(String value);
 
     /** Add a value to property isPartOf. */
+    Builder addIsPartOf(Thing value);
+
+    /** Add a value to property isPartOf. */
     Builder addIsPartOf(CreativeWork value);
 
     /** Add a value to property isPartOf. */
@@ -513,6 +519,9 @@ public interface NewsArticle extends Article {
 
     /** Add a value to property mainEntity. */
     Builder addMainEntity(String value);
+
+    /** Add a value to property mainEntityOfPage. */
+    Builder addMainEntityOfPage(Thing value);
 
     /** Add a value to property mainEntityOfPage. */
     Builder addMainEntityOfPage(CreativeWork value);
@@ -654,6 +663,9 @@ public interface NewsArticle extends Article {
 
     /** Add a value to property publication. */
     Builder addPublication(String value);
+
+    /** Add a value to property publisher. */
+    Builder addPublisher(Thing value);
 
     /** Add a value to property publisher. */
     Builder addPublisher(Organization value);

@@ -1727,6 +1727,18 @@ public class BarcodeImpl extends ImageObjectImpl implements Barcode {
     public Barcode build() {
       return new BarcodeImpl(properties, reverseMap);
     }
+
+    @Override
+    public com.google.schemaorg.core.ImageObject.Builder addHeight(Integer value)
+    {
+        return addProperty(CoreConstants.PROPERTY_HEIGHT, Text.of(String.valueOf(value)));
+    }
+
+    @Override
+    public com.google.schemaorg.core.ImageObject.Builder addWidth(Integer value)
+    {
+        return addProperty(CoreConstants.PROPERTY_WIDTH, Text.of(String.valueOf(value)));
+    }
   }
 
   public BarcodeImpl(Multimap<String, ValueType> properties, Multimap<String, Thing> reverseMap) {

@@ -458,6 +458,11 @@ public class WebPageImpl extends CreativeWorkImpl implements WebPage {
     }
 
     @Override
+    public WebPage.Builder addBreadcrumb(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_BREADCRUMB, value);
+    }
+    
+    @Override
     public WebPage.Builder addBreadcrumb(BreadcrumbList value) {
       return addProperty(CoreConstants.PROPERTY_BREADCRUMB, value);
     }
@@ -943,6 +948,11 @@ public class WebPageImpl extends CreativeWorkImpl implements WebPage {
     }
 
     @Override
+    public WebPage.Builder addIsPartOf(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IS_PART_OF, value);
+    }
+    
+    @Override
     public WebPage.Builder addKeywords(Text value) {
       return addProperty(CoreConstants.PROPERTY_KEYWORDS, value);
     }
@@ -1125,6 +1135,11 @@ public class WebPageImpl extends CreativeWorkImpl implements WebPage {
     @Override
     public WebPage.Builder addPotentialAction(String value) {
       return addProperty(CoreConstants.PROPERTY_POTENTIAL_ACTION, Text.of(value));
+    }
+
+    @Override
+    public WebPage.Builder addPrimaryImageOfPage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_PRIMARY_IMAGE_OF_PAGE, value);
     }
 
     @Override

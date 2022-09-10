@@ -586,6 +586,11 @@ public class OrganizationImpl extends PlaceOrganizationCommonImpl implements Org
     }
 
     @Override
+    public Organization.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+    @Override
     public Organization.Builder addImage(ImageObject.Builder value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value.build());
     }

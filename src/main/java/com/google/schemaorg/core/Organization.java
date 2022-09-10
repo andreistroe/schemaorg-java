@@ -296,6 +296,9 @@ public interface Organization extends PlaceOrganizationCommon {
     Builder addImage(ImageObject value);
 
     /** Add a value to property image. */
+    Builder addImage(Thing value);
+
+    /** Add a value to property image. */
     Builder addImage(ImageObject.Builder value);
 
     /** Add a value to property image. */

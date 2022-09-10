@@ -854,6 +854,11 @@ public class NewsArticleImpl extends ArticleImpl implements NewsArticle {
     }
 
     @Override
+    public NewsArticle.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+    @Override
     public NewsArticle.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }
@@ -939,6 +944,11 @@ public class NewsArticleImpl extends ArticleImpl implements NewsArticle {
     }
 
     @Override
+    public NewsArticle.Builder addIsPartOf(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IS_PART_OF, value);
+    }
+
+    @Override
     public NewsArticle.Builder addIsPartOf(CreativeWork value) {
       return addProperty(CoreConstants.PROPERTY_IS_PART_OF, value);
     }
@@ -1021,6 +1031,11 @@ public class NewsArticleImpl extends ArticleImpl implements NewsArticle {
     @Override
     public NewsArticle.Builder addMainEntity(String value) {
       return addProperty(CoreConstants.PROPERTY_MAIN_ENTITY, Text.of(value));
+    }
+
+    @Override
+    public NewsArticle.Builder addMainEntityOfPage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_MAIN_ENTITY_OF_PAGE, value);
     }
 
     @Override
@@ -1256,6 +1271,11 @@ public class NewsArticleImpl extends ArticleImpl implements NewsArticle {
     @Override
     public NewsArticle.Builder addPublication(String value) {
       return addProperty(CoreConstants.PROPERTY_PUBLICATION, Text.of(value));
+    }
+
+    @Override
+    public NewsArticle.Builder addPublisher(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_PUBLISHER, value);
     }
 
     @Override

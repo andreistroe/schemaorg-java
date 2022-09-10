@@ -1145,6 +1145,11 @@ public class WebSiteImpl extends CreativeWorkImpl implements WebSite {
     }
 
     @Override
+    public WebSite.Builder addPublisher(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_PUBLISHER, value);
+    }
+
+    @Override
     public WebSite.Builder addPublisher(String value) {
       return addProperty(CoreConstants.PROPERTY_PUBLISHER, Text.of(value));
     }

@@ -598,6 +598,9 @@ public interface WebSite extends CreativeWork {
     Builder addPublisher(Person.Builder value);
 
     /** Add a value to property publisher. */
+    Builder addPublisher(Thing value);
+    
+    /** Add a value to property publisher. */
     Builder addPublisher(String value);
 
     /** Add a value to property publishingPrinciples. */

@@ -490,6 +490,9 @@ public interface ImageObject extends MediaObject {
     /** Add a value to property height. */
     Builder addHeight(String value);
 
+    /** Add a value to property height. */
+    Builder addHeight(Integer value);
+
     /** Add a value to property image. */
     Builder addImage(ImageObject value);
 
@@ -894,6 +897,9 @@ public interface ImageObject extends MediaObject {
 
     /** Add a value to property width. */
     Builder addWidth(String value);
+
+    /** Add a value to property width. */
+    Builder addWidth(Integer value);
 
     /** Add a value to property workExample. */
     Builder addWorkExample(CreativeWork value);

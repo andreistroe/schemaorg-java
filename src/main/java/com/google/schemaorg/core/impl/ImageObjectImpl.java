@@ -1005,6 +1005,10 @@ public class ImageObjectImpl extends MediaObjectImpl implements ImageObject {
     }
 
     @Override
+    public ImageObject.Builder addHeight(Integer value) {
+      return addProperty(CoreConstants.PROPERTY_HEIGHT, Text.of(String.valueOf(value)));
+    }
+    @Override
     public ImageObject.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }
@@ -1677,6 +1681,11 @@ public class ImageObjectImpl extends MediaObjectImpl implements ImageObject {
     @Override
     public ImageObject.Builder addWidth(String value) {
       return addProperty(CoreConstants.PROPERTY_WIDTH, Text.of(value));
+    }
+
+    @Override
+    public ImageObject.Builder addWidth(Integer value) {
+      return addProperty(CoreConstants.PROPERTY_WIDTH, Text.of(String.valueOf(value)));
     }
 
     @Override
