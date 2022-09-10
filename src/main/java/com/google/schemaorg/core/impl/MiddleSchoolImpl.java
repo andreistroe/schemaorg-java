@@ -580,6 +580,12 @@ public class MiddleSchoolImpl extends EducationalOrganizationImpl implements Mid
     }
 
     @Override
+    public MiddleSchool.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public MiddleSchool.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

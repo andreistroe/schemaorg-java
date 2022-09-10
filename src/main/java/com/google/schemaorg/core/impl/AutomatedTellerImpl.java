@@ -759,6 +759,12 @@ public class AutomatedTellerImpl extends FinancialServiceImpl implements Automat
     }
 
     @Override
+    public AutomatedTeller.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public AutomatedTeller.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

@@ -618,6 +618,12 @@ public class SportsTeamImpl extends SportsOrganizationImpl implements SportsTeam
     }
 
     @Override
+    public SportsTeam.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public SportsTeam.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

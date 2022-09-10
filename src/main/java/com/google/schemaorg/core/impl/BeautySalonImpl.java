@@ -759,6 +759,12 @@ public class BeautySalonImpl extends HealthAndBeautyBusinessImpl implements Beau
     }
 
     @Override
+    public BeautySalon.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public BeautySalon.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

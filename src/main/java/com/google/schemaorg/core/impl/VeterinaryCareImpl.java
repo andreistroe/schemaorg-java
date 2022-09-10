@@ -759,6 +759,12 @@ public class VeterinaryCareImpl extends MedicalOrganizationImpl implements Veter
     }
 
     @Override
+    public VeterinaryCare.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public VeterinaryCare.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

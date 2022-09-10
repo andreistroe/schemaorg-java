@@ -759,6 +759,12 @@ public class MusicStoreImpl extends StoreImpl implements MusicStore {
     }
 
     @Override
+    public MusicStore.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public MusicStore.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

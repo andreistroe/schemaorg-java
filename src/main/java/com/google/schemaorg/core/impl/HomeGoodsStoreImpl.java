@@ -759,6 +759,12 @@ public class HomeGoodsStoreImpl extends StoreImpl implements HomeGoodsStore {
     }
 
     @Override
+    public HomeGoodsStore.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public HomeGoodsStore.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

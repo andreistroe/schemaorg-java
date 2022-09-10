@@ -759,6 +759,12 @@ public class BookStoreImpl extends StoreImpl implements BookStore {
     }
 
     @Override
+    public BookStore.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public BookStore.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

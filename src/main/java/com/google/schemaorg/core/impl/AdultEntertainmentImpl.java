@@ -760,6 +760,12 @@ public class AdultEntertainmentImpl extends EntertainmentBusinessImpl
     }
 
     @Override
+    public AdultEntertainment.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public AdultEntertainment.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

@@ -788,6 +788,12 @@ public class FoodEstablishmentImpl extends LocalBusinessImpl implements FoodEsta
     }
 
     @Override
+    public FoodEstablishment.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public FoodEstablishment.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

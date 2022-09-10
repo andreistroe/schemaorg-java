@@ -759,6 +759,12 @@ public class AutoWashImpl extends AutomotiveBusinessImpl implements AutoWash {
     }
 
     @Override
+    public AutoWash.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public AutoWash.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

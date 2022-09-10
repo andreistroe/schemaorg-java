@@ -759,6 +759,12 @@ public class MotorcycleRepairImpl extends AutomotiveBusinessImpl implements Moto
     }
 
     @Override
+    public MotorcycleRepair.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public MotorcycleRepair.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

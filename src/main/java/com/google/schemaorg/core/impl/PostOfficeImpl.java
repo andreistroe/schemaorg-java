@@ -759,6 +759,12 @@ public class PostOfficeImpl extends GovernmentOfficeImpl implements PostOffice {
     }
 
     @Override
+    public PostOffice.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public PostOffice.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

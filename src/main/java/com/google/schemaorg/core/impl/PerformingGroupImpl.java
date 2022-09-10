@@ -580,6 +580,12 @@ public class PerformingGroupImpl extends OrganizationImpl implements PerformingG
     }
 
     @Override
+    public PerformingGroup.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public PerformingGroup.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

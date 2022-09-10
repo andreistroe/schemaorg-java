@@ -580,6 +580,12 @@ public class HighSchoolImpl extends EducationalOrganizationImpl implements HighS
     }
 
     @Override
+    public HighSchool.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public HighSchool.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

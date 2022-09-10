@@ -759,6 +759,12 @@ public class AccountingServiceImpl extends FinancialServiceImpl implements Accou
     }
 
     @Override
+    public AccountingService.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public AccountingService.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

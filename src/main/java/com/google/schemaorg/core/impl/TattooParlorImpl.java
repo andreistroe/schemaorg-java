@@ -759,6 +759,12 @@ public class TattooParlorImpl extends HealthAndBeautyBusinessImpl implements Tat
     }
 
     @Override
+    public TattooParlor.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public TattooParlor.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

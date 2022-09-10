@@ -762,6 +762,12 @@ public class LocalBusinessImpl extends LocalBusinessCivicStructureCommonImpl
     }
 
     @Override
+    public LocalBusiness.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public LocalBusiness.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

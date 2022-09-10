@@ -580,6 +580,12 @@ public class PreschoolImpl extends EducationalOrganizationImpl implements Presch
     }
 
     @Override
+    public Preschool.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public Preschool.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

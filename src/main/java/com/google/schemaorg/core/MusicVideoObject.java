@@ -474,6 +474,9 @@ public interface MusicVideoObject extends MediaObject {
     /** Add a value to property height. */
     Builder addHeight(String value);
 
+    /** Add a value to property height. */
+    Builder addHeight(Integer value);
+
     /** Add a value to property image. */
     Builder addImage(ImageObject value);
 

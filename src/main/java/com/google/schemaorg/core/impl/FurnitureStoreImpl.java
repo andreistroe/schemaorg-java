@@ -759,6 +759,12 @@ public class FurnitureStoreImpl extends StoreImpl implements FurnitureStore {
     }
 
     @Override
+    public FurnitureStore.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public FurnitureStore.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

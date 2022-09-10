@@ -759,6 +759,12 @@ public class MovingCompanyImpl extends HomeAndConstructionBusinessImpl implement
     }
 
     @Override
+    public MovingCompany.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public MovingCompany.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

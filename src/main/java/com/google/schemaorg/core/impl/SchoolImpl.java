@@ -580,6 +580,12 @@ public class SchoolImpl extends EducationalOrganizationImpl implements School {
     }
 
     @Override
+    public School.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public School.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

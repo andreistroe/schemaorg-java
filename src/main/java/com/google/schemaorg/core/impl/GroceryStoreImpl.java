@@ -759,6 +759,12 @@ public class GroceryStoreImpl extends StoreImpl implements GroceryStore {
     }
 
     @Override
+    public GroceryStore.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public GroceryStore.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

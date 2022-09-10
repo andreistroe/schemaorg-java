@@ -759,6 +759,12 @@ public class StoreImpl extends LocalBusinessImpl implements Store {
     }
 
     @Override
+    public Store.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public Store.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

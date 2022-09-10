@@ -759,6 +759,12 @@ public class AutomotiveBusinessImpl extends LocalBusinessImpl implements Automot
     }
 
     @Override
+    public AutomotiveBusiness.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public AutomotiveBusiness.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

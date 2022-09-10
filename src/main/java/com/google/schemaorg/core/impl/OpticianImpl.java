@@ -759,6 +759,12 @@ public class OpticianImpl extends MedicalOrganizationImpl implements Optician {
     }
 
     @Override
+    public Optician.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public Optician.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

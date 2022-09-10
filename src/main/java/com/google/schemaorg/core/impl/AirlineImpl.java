@@ -607,6 +607,12 @@ public class AirlineImpl extends OrganizationImpl implements Airline {
     }
 
     @Override
+    public Airline.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public Airline.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

@@ -759,6 +759,12 @@ public class ShoppingCenterImpl extends LocalBusinessImpl implements ShoppingCen
     }
 
     @Override
+    public ShoppingCenter.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public ShoppingCenter.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

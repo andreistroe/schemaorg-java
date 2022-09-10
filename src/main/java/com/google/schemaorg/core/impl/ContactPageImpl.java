@@ -461,6 +461,11 @@ public class ContactPageImpl extends WebPageImpl implements ContactPage {
     }
 
     @Override
+    public ContactPage.Builder addBreadcrumb(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_BREADCRUMB, value);
+    }
+
+    @Override
     public ContactPage.Builder addBreadcrumb(BreadcrumbList.Builder value) {
       return addProperty(CoreConstants.PROPERTY_BREADCRUMB, value.build());
     }
@@ -926,6 +931,11 @@ public class ContactPageImpl extends WebPageImpl implements ContactPage {
     }
 
     @Override
+    public ContactPage.Builder addIsPartOf(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IS_PART_OF, value);
+    }
+
+    @Override
     public ContactPage.Builder addIsPartOf(CreativeWork value) {
       return addProperty(CoreConstants.PROPERTY_IS_PART_OF, value);
     }
@@ -1123,6 +1133,11 @@ public class ContactPageImpl extends WebPageImpl implements ContactPage {
     @Override
     public ContactPage.Builder addPotentialAction(String value) {
       return addProperty(CoreConstants.PROPERTY_POTENTIAL_ACTION, Text.of(value));
+    }
+
+    @Override
+    public ContactPage.Builder addPrimaryImageOfPage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_PRIMARY_IMAGE_OF_PAGE, value);
     }
 
     @Override

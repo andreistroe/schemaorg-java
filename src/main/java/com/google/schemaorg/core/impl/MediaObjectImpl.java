@@ -1616,6 +1616,11 @@ public class MediaObjectImpl extends CreativeWorkImpl implements MediaObject {
     }
 
     @Override
+    public MediaObject.Builder addWidth(Integer value) {
+      return addProperty(CoreConstants.PROPERTY_WIDTH, Text.of(String.valueOf(value)));
+    }
+
+    @Override
     public MediaObject.Builder addWorkExample(CreativeWork value) {
       return addProperty(CoreConstants.PROPERTY_WORK_EXAMPLE, value);
     }
@@ -1664,6 +1669,7 @@ public class MediaObjectImpl extends CreativeWorkImpl implements MediaObject {
     public MediaObject build() {
       return new MediaObjectImpl(properties, reverseMap);
     }
+
   }
 
   public MediaObjectImpl(

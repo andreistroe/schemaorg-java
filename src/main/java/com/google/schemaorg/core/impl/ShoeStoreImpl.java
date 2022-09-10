@@ -759,6 +759,12 @@ public class ShoeStoreImpl extends StoreImpl implements ShoeStore {
     }
 
     @Override
+    public ShoeStore.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public ShoeStore.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

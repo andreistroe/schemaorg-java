@@ -786,6 +786,12 @@ public class BarOrPubImpl extends FoodEstablishmentImpl implements BarOrPub {
     }
 
     @Override
+    public BarOrPub.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public BarOrPub.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

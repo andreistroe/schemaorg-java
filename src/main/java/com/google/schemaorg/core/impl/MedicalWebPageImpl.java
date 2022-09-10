@@ -470,6 +470,11 @@ public class MedicalWebPageImpl extends WebPageImpl implements MedicalWebPage {
     }
 
     @Override
+    public MedicalWebPage.Builder addBreadcrumb(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_BREADCRUMB, value);
+    }
+
+    @Override
     public MedicalWebPage.Builder addBreadcrumb(BreadcrumbList value) {
       return addProperty(CoreConstants.PROPERTY_BREADCRUMB, value);
     }
@@ -940,6 +945,11 @@ public class MedicalWebPageImpl extends WebPageImpl implements MedicalWebPage {
     }
 
     @Override
+    public MedicalWebPage.Builder addIsPartOf(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IS_PART_OF, value);
+    }
+
+    @Override
     public MedicalWebPage.Builder addIsPartOf(CreativeWork value) {
       return addProperty(CoreConstants.PROPERTY_IS_PART_OF, value);
     }
@@ -1137,6 +1147,11 @@ public class MedicalWebPageImpl extends WebPageImpl implements MedicalWebPage {
     @Override
     public MedicalWebPage.Builder addPotentialAction(String value) {
       return addProperty(CoreConstants.PROPERTY_POTENTIAL_ACTION, Text.of(value));
+    }
+
+    @Override
+    public MedicalWebPage.Builder addPrimaryImageOfPage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_PRIMARY_IMAGE_OF_PAGE, value);
     }
 
     @Override

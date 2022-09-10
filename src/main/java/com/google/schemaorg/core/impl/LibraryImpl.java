@@ -759,6 +759,12 @@ public class LibraryImpl extends LocalBusinessImpl implements Library {
     }
 
     @Override
+    public Library.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public Library.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

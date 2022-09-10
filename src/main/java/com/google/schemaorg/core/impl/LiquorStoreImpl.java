@@ -759,6 +759,12 @@ public class LiquorStoreImpl extends StoreImpl implements LiquorStore {
     }
 
     @Override
+    public LiquorStore.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public LiquorStore.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

@@ -759,6 +759,12 @@ public class BowlingAlleyImpl extends SportsActivityLocationImpl implements Bowl
     }
 
     @Override
+    public BowlingAlley.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public BowlingAlley.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

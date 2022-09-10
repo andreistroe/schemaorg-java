@@ -759,6 +759,12 @@ public class SportsClubImpl extends SportsActivityLocationImpl implements Sports
     }
 
     @Override
+    public SportsClub.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public SportsClub.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

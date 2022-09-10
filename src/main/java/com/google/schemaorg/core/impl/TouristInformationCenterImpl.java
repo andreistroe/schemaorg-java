@@ -761,6 +761,12 @@ public class TouristInformationCenterImpl extends LocalBusinessImpl
     }
 
     @Override
+    public TouristInformationCenter.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public TouristInformationCenter.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

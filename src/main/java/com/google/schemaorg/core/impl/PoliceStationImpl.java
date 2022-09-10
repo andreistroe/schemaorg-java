@@ -761,6 +761,12 @@ public class PoliceStationImpl extends CivicStructureImpl implements PoliceStati
     }
 
     @Override
+    public PoliceStation.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public PoliceStation.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

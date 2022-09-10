@@ -786,6 +786,12 @@ public class WineryImpl extends FoodEstablishmentImpl implements Winery {
     }
 
     @Override
+    public Winery.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public Winery.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

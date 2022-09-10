@@ -759,6 +759,12 @@ public class MovieRentalStoreImpl extends StoreImpl implements MovieRentalStore 
     }
 
     @Override
+    public MovieRentalStore.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public MovieRentalStore.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

@@ -760,6 +760,12 @@ public class EntertainmentBusinessImpl extends LocalBusinessImpl implements Ente
     }
 
     @Override
+    public EntertainmentBusiness.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public EntertainmentBusiness.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

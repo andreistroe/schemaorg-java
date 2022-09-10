@@ -759,6 +759,12 @@ public class HousePainterImpl extends HomeAndConstructionBusinessImpl implements
     }
 
     @Override
+    public HousePainter.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public HousePainter.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

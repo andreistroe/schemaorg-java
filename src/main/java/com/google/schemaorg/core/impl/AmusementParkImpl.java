@@ -759,6 +759,12 @@ public class AmusementParkImpl extends EntertainmentBusinessImpl implements Amus
     }
 
     @Override
+    public AmusementPark.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public AmusementPark.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

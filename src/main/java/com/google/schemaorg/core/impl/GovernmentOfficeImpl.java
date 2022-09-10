@@ -759,6 +759,12 @@ public class GovernmentOfficeImpl extends LocalBusinessImpl implements Governmen
     }
 
     @Override
+    public GovernmentOffice.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public GovernmentOffice.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

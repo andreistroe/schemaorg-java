@@ -759,6 +759,12 @@ public class AutoDealerImpl extends AutomotiveBusinessImpl implements AutoDealer
     }
 
     @Override
+    public AutoDealer.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public AutoDealer.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

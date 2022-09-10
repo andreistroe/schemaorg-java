@@ -759,6 +759,12 @@ public class MedicalOrganizationImpl extends LocalBusinessImpl implements Medica
     }
 
     @Override
+    public MedicalOrganization.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public MedicalOrganization.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

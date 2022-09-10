@@ -759,6 +759,12 @@ public class JewelryStoreImpl extends StoreImpl implements JewelryStore {
     }
 
     @Override
+    public JewelryStore.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public JewelryStore.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

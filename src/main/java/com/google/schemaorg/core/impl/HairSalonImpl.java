@@ -759,6 +759,12 @@ public class HairSalonImpl extends HealthAndBeautyBusinessImpl implements HairSa
     }
 
     @Override
+    public HairSalon.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public HairSalon.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

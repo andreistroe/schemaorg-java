@@ -759,6 +759,12 @@ public class GasStationImpl extends AutomotiveBusinessImpl implements GasStation
     }
 
     @Override
+    public GasStation.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public GasStation.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

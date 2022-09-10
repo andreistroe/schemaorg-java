@@ -779,6 +779,12 @@ public class DiagnosticLabImpl extends MedicalOrganizationImpl implements Diagno
     }
 
     @Override
+    public DiagnosticLab.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public DiagnosticLab.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

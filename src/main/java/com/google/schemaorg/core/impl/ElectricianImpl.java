@@ -759,6 +759,12 @@ public class ElectricianImpl extends HomeAndConstructionBusinessImpl implements 
     }
 
     @Override
+    public Electrician.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public Electrician.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

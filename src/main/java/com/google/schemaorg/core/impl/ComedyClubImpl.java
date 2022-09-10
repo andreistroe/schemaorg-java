@@ -759,6 +759,12 @@ public class ComedyClubImpl extends EntertainmentBusinessImpl implements ComedyC
     }
 
     @Override
+    public ComedyClub.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public ComedyClub.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

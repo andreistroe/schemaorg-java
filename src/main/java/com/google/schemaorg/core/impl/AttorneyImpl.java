@@ -759,6 +759,12 @@ public class AttorneyImpl extends LegalServiceImpl implements Attorney {
     }
 
     @Override
+    public Attorney.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public Attorney.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

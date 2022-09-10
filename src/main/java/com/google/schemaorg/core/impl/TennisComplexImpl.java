@@ -759,6 +759,12 @@ public class TennisComplexImpl extends SportsActivityLocationImpl implements Ten
     }
 
     @Override
+    public TennisComplex.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public TennisComplex.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

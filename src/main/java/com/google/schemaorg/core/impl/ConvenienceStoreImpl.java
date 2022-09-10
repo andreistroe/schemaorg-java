@@ -759,6 +759,12 @@ public class ConvenienceStoreImpl extends StoreImpl implements ConvenienceStore 
     }
 
     @Override
+    public ConvenienceStore.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public ConvenienceStore.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

@@ -475,6 +475,11 @@ public class AboutPageImpl extends WebPageImpl implements AboutPage {
     }
 
     @Override
+    public AboutPage.Builder addBreadcrumb(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_BREADCRUMB, value);
+    }
+
+    @Override
     public AboutPage.Builder addCharacter(Person value) {
       return addProperty(CoreConstants.PROPERTY_CHARACTER, value);
     }
@@ -930,6 +935,11 @@ public class AboutPageImpl extends WebPageImpl implements AboutPage {
     }
 
     @Override
+    public AboutPage.Builder addIsPartOf(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IS_PART_OF, value);
+    }
+
+    @Override
     public AboutPage.Builder addIsPartOf(CreativeWork.Builder value) {
       return addProperty(CoreConstants.PROPERTY_IS_PART_OF, value.build());
     }
@@ -1126,6 +1136,11 @@ public class AboutPageImpl extends WebPageImpl implements AboutPage {
 
     @Override
     public AboutPage.Builder addPrimaryImageOfPage(ImageObject value) {
+      return addProperty(CoreConstants.PROPERTY_PRIMARY_IMAGE_OF_PAGE, value);
+    }
+
+    @Override
+    public AboutPage.Builder addPrimaryImageOfPage(Thing value) {
       return addProperty(CoreConstants.PROPERTY_PRIMARY_IMAGE_OF_PAGE, value);
     }
 
@@ -1558,6 +1573,7 @@ public class AboutPageImpl extends WebPageImpl implements AboutPage {
     public AboutPage build() {
       return new AboutPageImpl(properties, reverseMap);
     }
+
   }
 
   public AboutPageImpl(Multimap<String, ValueType> properties, Multimap<String, Thing> reverseMap) {

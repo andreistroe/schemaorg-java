@@ -759,6 +759,12 @@ public class RadioStationImpl extends LocalBusinessImpl implements RadioStation 
     }
 
     @Override
+    public RadioStation.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public RadioStation.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

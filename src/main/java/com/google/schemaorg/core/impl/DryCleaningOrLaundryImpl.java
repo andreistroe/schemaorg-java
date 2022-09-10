@@ -759,6 +759,12 @@ public class DryCleaningOrLaundryImpl extends LocalBusinessImpl implements DryCl
     }
 
     @Override
+    public DryCleaningOrLaundry.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public DryCleaningOrLaundry.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

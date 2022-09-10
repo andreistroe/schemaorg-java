@@ -759,6 +759,12 @@ public class PawnShopImpl extends StoreImpl implements PawnShop {
     }
 
     @Override
+    public PawnShop.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public PawnShop.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

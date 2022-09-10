@@ -759,6 +759,12 @@ public class BankOrCreditUnionImpl extends FinancialServiceImpl implements BankO
     }
 
     @Override
+    public BankOrCreditUnion.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public BankOrCreditUnion.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

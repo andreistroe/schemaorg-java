@@ -456,6 +456,11 @@ public class ImageGalleryImpl extends CollectionPageImpl implements ImageGallery
     }
 
     @Override
+    public ImageGallery.Builder addBreadcrumb(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_BREADCRUMB, value);
+    }
+
+    @Override
     public ImageGallery.Builder addBreadcrumb(BreadcrumbList value) {
       return addProperty(CoreConstants.PROPERTY_BREADCRUMB, value);
     }
@@ -926,6 +931,11 @@ public class ImageGalleryImpl extends CollectionPageImpl implements ImageGallery
     }
 
     @Override
+    public ImageGallery.Builder addIsPartOf(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IS_PART_OF, value);
+    }
+
+    @Override
     public ImageGallery.Builder addIsPartOf(CreativeWork value) {
       return addProperty(CoreConstants.PROPERTY_IS_PART_OF, value);
     }
@@ -1123,6 +1133,11 @@ public class ImageGalleryImpl extends CollectionPageImpl implements ImageGallery
     @Override
     public ImageGallery.Builder addPotentialAction(String value) {
       return addProperty(CoreConstants.PROPERTY_POTENTIAL_ACTION, Text.of(value));
+    }
+
+    @Override
+    public ImageGallery.Builder addPrimaryImageOfPage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_PRIMARY_IMAGE_OF_PAGE, value);
     }
 
     @Override

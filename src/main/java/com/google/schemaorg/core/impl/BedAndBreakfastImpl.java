@@ -759,6 +759,12 @@ public class BedAndBreakfastImpl extends LodgingBusinessImpl implements BedAndBr
     }
 
     @Override
+    public BedAndBreakfast.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public BedAndBreakfast.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

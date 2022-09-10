@@ -965,6 +965,11 @@ public class MusicVideoObjectImpl extends MediaObjectImpl implements MusicVideoO
     }
 
     @Override
+    public MusicVideoObject.Builder addHeight(Integer value) {
+      return addProperty(CoreConstants.PROPERTY_HEIGHT, Text.of(String.valueOf(value)));
+    }
+
+    @Override
     public MusicVideoObject.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }
@@ -1612,6 +1617,11 @@ public class MusicVideoObjectImpl extends MediaObjectImpl implements MusicVideoO
     @Override
     public MusicVideoObject.Builder addWidth(String value) {
       return addProperty(CoreConstants.PROPERTY_WIDTH, Text.of(value));
+    }
+
+    @Override
+    public MusicVideoObject.Builder addWidth(Integer value) {
+      return addProperty(CoreConstants.PROPERTY_WIDTH, Text.of(String.valueOf(value)));
     }
 
     @Override

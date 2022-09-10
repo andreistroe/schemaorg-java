@@ -759,6 +759,12 @@ public class LegalServiceImpl extends LocalBusinessImpl implements LegalService 
     }
 
     @Override
+    public LegalService.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public LegalService.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

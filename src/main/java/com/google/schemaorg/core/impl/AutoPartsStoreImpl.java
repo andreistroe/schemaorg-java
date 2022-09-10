@@ -759,6 +759,12 @@ public class AutoPartsStoreImpl extends AutomotiveBusinessImpl implements AutoPa
     }
 
     @Override
+    public AutoPartsStore.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public AutoPartsStore.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

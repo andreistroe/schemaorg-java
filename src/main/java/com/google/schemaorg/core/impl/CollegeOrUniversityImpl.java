@@ -581,6 +581,12 @@ public class CollegeOrUniversityImpl extends EducationalOrganizationImpl
     }
 
     @Override
+    public CollegeOrUniversity.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public CollegeOrUniversity.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

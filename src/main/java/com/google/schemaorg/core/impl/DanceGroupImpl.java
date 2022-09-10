@@ -580,6 +580,12 @@ public class DanceGroupImpl extends PerformingGroupImpl implements DanceGroup {
     }
 
     @Override
+    public DanceGroup.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public DanceGroup.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

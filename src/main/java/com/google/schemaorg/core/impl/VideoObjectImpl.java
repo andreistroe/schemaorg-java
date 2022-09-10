@@ -1777,6 +1777,10 @@ public class VideoObjectImpl extends MediaObjectImpl implements VideoObject {
     }
 
     @Override
+    public VideoObject.Builder addWidth(Integer value) {
+      return addProperty(CoreConstants.PROPERTY_WIDTH, Text.of(String.valueOf(value)));
+    }
+    @Override
     public VideoObject.Builder addWorkExample(CreativeWork value) {
       return addProperty(CoreConstants.PROPERTY_WORK_EXAMPLE, value);
     }

@@ -761,6 +761,12 @@ public class SportsActivityLocationImpl extends LocalBusinessImpl
     }
 
     @Override
+    public SportsActivityLocation.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public SportsActivityLocation.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

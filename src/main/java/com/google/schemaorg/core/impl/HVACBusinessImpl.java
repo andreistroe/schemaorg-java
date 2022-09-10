@@ -759,6 +759,12 @@ public class HVACBusinessImpl extends HomeAndConstructionBusinessImpl implements
     }
 
     @Override
+    public HVACBusiness.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public HVACBusiness.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

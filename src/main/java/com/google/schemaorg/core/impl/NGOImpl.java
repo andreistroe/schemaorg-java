@@ -580,6 +580,12 @@ public class NGOImpl extends OrganizationImpl implements NGO {
     }
 
     @Override
+    public NGO.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public NGO.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

@@ -759,6 +759,12 @@ public class EmploymentAgencyImpl extends LocalBusinessImpl implements Employmen
     }
 
     @Override
+    public EmploymentAgency.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public EmploymentAgency.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

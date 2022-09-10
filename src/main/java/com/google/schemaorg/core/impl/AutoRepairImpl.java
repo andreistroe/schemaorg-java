@@ -759,6 +759,12 @@ public class AutoRepairImpl extends AutomotiveBusinessImpl implements AutoRepair
     }
 
     @Override
+    public AutoRepair.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public AutoRepair.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

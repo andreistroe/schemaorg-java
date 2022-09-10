@@ -760,6 +760,12 @@ public class RoofingContractorImpl extends HomeAndConstructionBusinessImpl
     }
 
     @Override
+    public RoofingContractor.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public RoofingContractor.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

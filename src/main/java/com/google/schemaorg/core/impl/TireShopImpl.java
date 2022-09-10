@@ -759,6 +759,12 @@ public class TireShopImpl extends StoreImpl implements TireShop {
     }
 
     @Override
+    public TireShop.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public TireShop.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

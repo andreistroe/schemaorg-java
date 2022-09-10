@@ -759,6 +759,12 @@ public class HardwareStoreImpl extends StoreImpl implements HardwareStore {
     }
 
     @Override
+    public HardwareStore.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public HardwareStore.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

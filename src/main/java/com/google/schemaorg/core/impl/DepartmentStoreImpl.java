@@ -759,6 +759,12 @@ public class DepartmentStoreImpl extends StoreImpl implements DepartmentStore {
     }
 
     @Override
+    public DepartmentStore.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public DepartmentStore.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

@@ -759,6 +759,12 @@ public class HobbyShopImpl extends StoreImpl implements HobbyShop {
     }
 
     @Override
+    public HobbyShop.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public HobbyShop.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

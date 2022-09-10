@@ -759,6 +759,12 @@ public class InternetCafeImpl extends LocalBusinessImpl implements InternetCafe 
     }
 
     @Override
+    public InternetCafe.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public InternetCafe.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

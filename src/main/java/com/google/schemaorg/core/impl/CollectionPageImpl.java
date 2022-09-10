@@ -456,6 +456,11 @@ public class CollectionPageImpl extends WebPageImpl implements CollectionPage {
     }
 
     @Override
+    public CollectionPage.Builder addBreadcrumb(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_BREADCRUMB, value);
+    }
+
+    @Override
     public CollectionPage.Builder addBreadcrumb(BreadcrumbList value) {
       return addProperty(CoreConstants.PROPERTY_BREADCRUMB, value);
     }
@@ -926,6 +931,11 @@ public class CollectionPageImpl extends WebPageImpl implements CollectionPage {
     }
 
     @Override
+    public CollectionPage.Builder addIsPartOf(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IS_PART_OF, value);
+    }
+
+    @Override
     public CollectionPage.Builder addIsPartOf(CreativeWork value) {
       return addProperty(CoreConstants.PROPERTY_IS_PART_OF, value);
     }
@@ -1123,6 +1133,11 @@ public class CollectionPageImpl extends WebPageImpl implements CollectionPage {
     @Override
     public CollectionPage.Builder addPotentialAction(String value) {
       return addProperty(CoreConstants.PROPERTY_POTENTIAL_ACTION, Text.of(value));
+    }
+
+    @Override
+    public CollectionPage.Builder addPrimaryImageOfPage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_PRIMARY_IMAGE_OF_PAGE, value);
     }
 
     @Override

@@ -759,6 +759,12 @@ public class HostelImpl extends LodgingBusinessImpl implements Hostel {
     }
 
     @Override
+    public Hostel.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public Hostel.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

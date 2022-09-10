@@ -580,6 +580,12 @@ public class TheaterGroupImpl extends PerformingGroupImpl implements TheaterGrou
     }
 
     @Override
+    public TheaterGroup.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public TheaterGroup.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

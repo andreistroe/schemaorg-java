@@ -786,6 +786,12 @@ public class CafeOrCoffeeShopImpl extends FoodEstablishmentImpl implements CafeO
     }
 
     @Override
+    public CafeOrCoffeeShop.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public CafeOrCoffeeShop.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

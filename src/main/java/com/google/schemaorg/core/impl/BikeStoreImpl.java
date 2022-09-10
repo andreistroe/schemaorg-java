@@ -759,6 +759,12 @@ public class BikeStoreImpl extends StoreImpl implements BikeStore {
     }
 
     @Override
+    public BikeStore.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public BikeStore.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

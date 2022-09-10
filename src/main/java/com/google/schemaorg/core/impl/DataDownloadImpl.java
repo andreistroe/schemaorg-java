@@ -1615,6 +1615,11 @@ public class DataDownloadImpl extends MediaObjectImpl implements DataDownload {
     }
 
     @Override
+    public DataDownload.Builder addWidth(Integer value) {
+      return addProperty(CoreConstants.PROPERTY_WIDTH, Text.of(String.valueOf(value)));
+    }
+
+    @Override
     public DataDownload.Builder addWorkExample(CreativeWork value) {
       return addProperty(CoreConstants.PROPERTY_WORK_EXAMPLE, value);
     }

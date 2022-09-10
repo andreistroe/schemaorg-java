@@ -759,6 +759,12 @@ public class NightClubImpl extends EntertainmentBusinessImpl implements NightClu
     }
 
     @Override
+    public NightClub.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public NightClub.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

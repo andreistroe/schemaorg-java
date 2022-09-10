@@ -759,6 +759,12 @@ public class MotelImpl extends LodgingBusinessImpl implements Motel {
     }
 
     @Override
+    public Motel.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public Motel.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

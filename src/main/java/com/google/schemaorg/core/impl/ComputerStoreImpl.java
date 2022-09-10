@@ -759,6 +759,12 @@ public class ComputerStoreImpl extends StoreImpl implements ComputerStore {
     }
 
     @Override
+    public ComputerStore.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public ComputerStore.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

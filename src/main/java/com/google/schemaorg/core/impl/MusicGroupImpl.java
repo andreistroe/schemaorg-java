@@ -642,6 +642,12 @@ public class MusicGroupImpl extends PerformingGroupImpl implements MusicGroup {
     }
 
     @Override
+    public MusicGroup.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public MusicGroup.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

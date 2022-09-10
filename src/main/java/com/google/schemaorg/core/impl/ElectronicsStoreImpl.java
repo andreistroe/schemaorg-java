@@ -759,6 +759,12 @@ public class ElectronicsStoreImpl extends StoreImpl implements ElectronicsStore 
     }
 
     @Override
+    public ElectronicsStore.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public ElectronicsStore.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

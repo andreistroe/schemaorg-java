@@ -759,6 +759,12 @@ public class PetStoreImpl extends StoreImpl implements PetStore {
     }
 
     @Override
+    public PetStore.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public PetStore.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

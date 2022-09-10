@@ -759,6 +759,12 @@ public class MotorcycleDealerImpl extends AutomotiveBusinessImpl implements Moto
     }
 
     @Override
+    public MotorcycleDealer.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public MotorcycleDealer.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

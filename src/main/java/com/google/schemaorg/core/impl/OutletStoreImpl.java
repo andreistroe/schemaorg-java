@@ -759,6 +759,12 @@ public class OutletStoreImpl extends StoreImpl implements OutletStore {
     }
 
     @Override
+    public OutletStore.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public OutletStore.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

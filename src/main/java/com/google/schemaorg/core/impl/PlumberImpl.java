@@ -759,6 +759,12 @@ public class PlumberImpl extends HomeAndConstructionBusinessImpl implements Plum
     }
 
     @Override
+    public Plumber.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public Plumber.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

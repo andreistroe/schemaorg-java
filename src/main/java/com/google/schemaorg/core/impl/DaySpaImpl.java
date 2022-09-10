@@ -759,6 +759,12 @@ public class DaySpaImpl extends HealthAndBeautyBusinessImpl implements DaySpa {
     }
 
     @Override
+    public DaySpa.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public DaySpa.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

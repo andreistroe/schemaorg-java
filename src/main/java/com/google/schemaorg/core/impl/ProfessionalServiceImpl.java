@@ -759,6 +759,12 @@ public class ProfessionalServiceImpl extends LocalBusinessImpl implements Profes
     }
 
     @Override
+    public ProfessionalService.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public ProfessionalService.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

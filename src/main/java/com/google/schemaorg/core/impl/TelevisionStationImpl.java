@@ -759,6 +759,12 @@ public class TelevisionStationImpl extends LocalBusinessImpl implements Televisi
     }
 
     @Override
+    public TelevisionStation.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public TelevisionStation.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

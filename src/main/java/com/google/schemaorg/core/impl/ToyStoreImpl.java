@@ -759,6 +759,12 @@ public class ToyStoreImpl extends StoreImpl implements ToyStore {
     }
 
     @Override
+    public ToyStore.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public ToyStore.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

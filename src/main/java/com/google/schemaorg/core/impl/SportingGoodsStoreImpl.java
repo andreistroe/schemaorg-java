@@ -759,6 +759,12 @@ public class SportingGoodsStoreImpl extends StoreImpl implements SportingGoodsSt
     }
 
     @Override
+    public SportingGoodsStore.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public SportingGoodsStore.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

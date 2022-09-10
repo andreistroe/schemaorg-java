@@ -759,6 +759,12 @@ public class HealthClubImpl extends HealthAndBeautyBusinessImpl implements Healt
     }
 
     @Override
+    public HealthClub.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public HealthClub.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

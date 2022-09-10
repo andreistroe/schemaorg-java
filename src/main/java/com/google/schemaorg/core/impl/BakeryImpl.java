@@ -788,6 +788,12 @@ public class BakeryImpl extends FoodEstablishmentImpl implements Bakery {
     }
 
     @Override
+    public Bakery.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public Bakery.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

@@ -760,6 +760,12 @@ public class PublicSwimmingPoolImpl extends SportsActivityLocationImpl
     }
 
     @Override
+    public PublicSwimmingPool.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public PublicSwimmingPool.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

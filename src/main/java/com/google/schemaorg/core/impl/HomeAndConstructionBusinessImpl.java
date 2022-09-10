@@ -761,6 +761,12 @@ public class HomeAndConstructionBusinessImpl extends LocalBusinessImpl
     }
 
     @Override
+    public HomeAndConstructionBusiness.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public HomeAndConstructionBusiness.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

@@ -581,6 +581,12 @@ public class GovernmentOrganizationImpl extends OrganizationImpl implements Gove
     }
 
     @Override
+    public GovernmentOrganization.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public GovernmentOrganization.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

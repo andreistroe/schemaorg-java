@@ -759,6 +759,12 @@ public class PharmacyImpl extends MedicalOrganizationImpl implements Pharmacy {
     }
 
     @Override
+    public Pharmacy.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public Pharmacy.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

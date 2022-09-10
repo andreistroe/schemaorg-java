@@ -582,6 +582,12 @@ public class EducationalOrganizationImpl extends OrganizationImpl
     }
 
     @Override
+    public EducationalOrganization.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public EducationalOrganization.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

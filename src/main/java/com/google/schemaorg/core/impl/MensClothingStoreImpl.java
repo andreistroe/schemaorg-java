@@ -759,6 +759,12 @@ public class MensClothingStoreImpl extends StoreImpl implements MensClothingStor
     }
 
     @Override
+    public MensClothingStore.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public MensClothingStore.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

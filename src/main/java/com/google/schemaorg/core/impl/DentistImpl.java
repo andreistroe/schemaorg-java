@@ -759,6 +759,12 @@ public class DentistImpl extends MedicalOrganizationImpl implements Dentist {
     }
 
     @Override
+    public Dentist.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public Dentist.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

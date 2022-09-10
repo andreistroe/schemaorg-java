@@ -759,6 +759,12 @@ public class ExerciseGymImpl extends SportsActivityLocationImpl implements Exerc
     }
 
     @Override
+    public ExerciseGym.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public ExerciseGym.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

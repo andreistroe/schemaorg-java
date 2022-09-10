@@ -759,6 +759,12 @@ public class AnimalShelterImpl extends LocalBusinessImpl implements AnimalShelte
     }
 
     @Override
+    public AnimalShelter.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public AnimalShelter.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }

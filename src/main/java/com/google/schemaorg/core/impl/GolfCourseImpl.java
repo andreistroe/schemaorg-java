@@ -759,6 +759,12 @@ public class GolfCourseImpl extends SportsActivityLocationImpl implements GolfCo
     }
 
     @Override
+    public GolfCourse.Builder addImage(Thing value) {
+      return addProperty(CoreConstants.PROPERTY_IMAGE, value);
+    }
+
+
+    @Override
     public GolfCourse.Builder addImage(ImageObject value) {
       return addProperty(CoreConstants.PROPERTY_IMAGE, value);
     }
